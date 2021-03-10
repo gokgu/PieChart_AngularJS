@@ -1,0 +1,19 @@
+<div>
+  <canvas 
+            baseChart 
+            class="chart"
+            [data]="pieChartData"
+            [labels]="pieChartLabels"
+            [chartType]="pieChartType"
+            [options]="pieChartOptions"
+            [plugins]="pieChartPlugins"
+            [colors]="pieChartColors"
+            [legend]="pieChartLegend"
+            
+            >
+    </canvas>
+</div>
+<div>
+   <button (click)="pieChartLegend=!pieChartLegend">Toggle  Legend</button>
+   <button (click)="addSlice()">Add Slice</button>
+</div>
